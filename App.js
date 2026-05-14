@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Text, View, Pressable } from "react-native";
-import {princessBook} from "./GiggleTales/Book01";
-import {alphabetBook} from "./GiggleTales/AlphabetBook"
-import HomeScreen from "./GiggleTales/Homescreen";
-import CoverScreen from "./GiggleTales/CoverScreen";
-import StoryScreen from "./GiggleTales/StoryScreen";
+import { dragonBook } from "./DragonBook.js";
+import {alphabetBook} from "./AlphabetBook.js"
+import {catBook} from "./catBook.js"
+import HomeScreen from "./Homescreen.js";
+import CoverScreen from "./CoverScreen.js";
+import StoryScreen from "./StoryScreen.js";
 
 export default function App() {
   const [screen, setScreen] = useState("home");

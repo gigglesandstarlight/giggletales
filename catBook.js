@@ -7,52 +7,52 @@ pages: [
   {
     emoji: "🎁",
     text: "The king brought a gift wrapped up tight,\nWith ribbons of purple, gold, and white.",
-    audio: require("../assets/catBookaudio/CatBook_Page01.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page01.mp3")
   },
   {
     emoji: "😾",
     text: "Princess Princess pulled the ribbons down,\nAnd out stepped a cat with a kingly frown.",
-    audio: require("../assets/catBookaudio/CatBook_Page02.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page02.mp3")
   },
   {
     emoji: "🐾",
     text: "He stretched one paw, then turned around,\nAnd marched right in, refusing to sit down.",
-    audio: require("../assets/catBookaudio/CatBook_Page03.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page03.mp3")
   },
   {
     emoji: "👣",
     text: "She gave him a pillow, soft and sweet,\nBut he sat instead on the knight’s two feet.",
-    audio: require("../assets/catBookaudio/CatBook_Page04.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page04.mp3")
   },
   {
     emoji: "🍲",
     text: "She gave him a basket, cozy and new,\nBut he sat instead in a bowl of stew.",
-    audio: require("../assets/catBookaudio/CatBook_Page05.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page05.mp3")
   },
   {
     emoji: "🐉",
     text: "She gave him a cushion fit for a king,\nBut he sat on the dragon’s shiny wing.",
-    audio: require("../assets/catBookaudio/CatBook_Page06.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page06.mp3")
   },
   {
     emoji: "🤧",
     text: "The dragon blinked and let out a fiery sneeze,\nWhile the cat looked proud and quite at ease.",
-    audio: require("../assets/catBookaudio/CatBook_Page07.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page07.mp3")
   },
   {
     emoji: "🛡️",
     text: "The knights all shouted, “That cat must go!”,\nBut Princess Princess told them, “No.”",
-    audio: require("../assets/catBookaudio/CatBook_Page08.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page08.mp3")
   },
   {
     emoji: "😻",
     text: "She giggled and offered her lap in delight,\nThe cat curled up and purred just right.",
-    audio: require("../assets/catBookaudio/CatBook_Page09.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page09.mp3")
   },
   {
     emoji: "🐈",
     text: "The king said, “Well, that gift seems right,”\nThen the cat stole his crown and darted out of sight.",
-    audio: require("../assets/catBookaudio/CatBook_Page10.mp3")
+    audio: require("./assets/catBookaudio/CatBook_Page10.mp3")
   },
   ],
 };

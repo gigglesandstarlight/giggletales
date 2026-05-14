@@ -1,0 +1,43 @@
+export const dragonBook = {
+  title: "The Sleepy Dragon",
+  subtitle: "A tiny tale from the Kingdom of Giggles",
+  coverEmoji: "🐉",
+  coverImage: null,
+pages: [
+  {
+    emoji: "👸",
+    text: "Princess Princess was lovely and bright,\nHer giggle filled her kingdom with delight.",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page01.mp3")
+  },
+  {
+    emoji: "✨",
+    text: "Her radiance was hard to hide,\nAnd soon a dragon had her in his sights.",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page02.mp3")
+  },
+  {
+    emoji: "🐉",
+    text: "He swooped down fast and carried her away,\nTo a high stone tower where she would stay.",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page03.mp3")
+  },
+  {
+    emoji: "🏰",
+    text: "Her knights quickly hatched a daring plan,\nTo save Princess Princess as fast as they can.",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page04.mp3")
+  },
+  {
+    emoji: "🛡️",
+    text: "Excited, Princess Princess giggled with glee,\nThanking her knights for setting her free.",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page05.mp3")
+  },
+  {
+    emoji: "😴",
+    text: "But the sound of her laugh woke the dragon from sleep,\nWho opened one eye, still grumpy and half asleep.",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page06.mp3")
+  },
+  {
+    emoji: "🌙",
+    text: "The knights dropped their shields and ran out of sight,\nAnd the dragon tucked her in and said, “Good night.”",
+    audio: require("./assets/dragonBookaudio/DragonBook_Page07.mp3")
+  },
+],
+};
