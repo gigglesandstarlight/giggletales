@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "GiggleTales",
+    "slug": "giggletales",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.giggletales.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ae4e499b-c18c-4444-99a9-5db868853f82"
+      }
+    }
+  }
+}
