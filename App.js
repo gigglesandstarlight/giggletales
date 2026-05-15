@@ -11,7 +11,7 @@ export default function App() {
   const [screen, setScreen] = useState("home");
   const [page, setPage] = useState(0);
   const [isReading, setIsReading] = useState(false);
-  const [selectedBook, setSelectedBook] = useState(princessBook);
+  const [selectedBook, setSelectedBook] = useState(dragonBook);
 
 if (screen === "cover") {
   return (
@@ -45,7 +45,7 @@ if (screen === "story") {
         setScreen("home");
       }}
       goCover={() => {
-        setIsReading();
+        setIsReading(false);
         setScreen("cover");
       }}
     />
