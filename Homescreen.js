@@ -40,7 +40,7 @@ export default function HomeScreen({ openBook }) {
           textAlign: "center",
         }}
       >
-        Sweet stories for little listeners
+        Sweet stories for little listeners{"\n"}Turn sound on to enable “Read to me.” 🔊
       </Text>
 
       <View style={{ marginTop: 32, width: "100%", gap: 16 }}>
