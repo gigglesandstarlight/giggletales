@@ -14,6 +14,13 @@
       "eas": {
         "projectId": "ae4e499b-c18c-4444-99a9-5db868853f82"
       }
-    }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ae4e499b-c18c-4444-99a9-5db868853f82"
+    },
+    "android": {}
   }
 }
