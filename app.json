@@ -2,10 +2,12 @@
   "expo": {
     "name": "GiggleTales",
     "slug": "giggletales",
+    "icon": "./assets/icon.png",
     "version": "1.0.0",
     "orientation": "portrait",
     "ios": {
       "bundleIdentifier": "com.giggletales.app",
+      "icon": "./assets/icon.png",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
