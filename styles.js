@@ -8,5 +8,6 @@ export const colors = {
   accent: "#FFA9DD",
   text: "#000000",
   mutedText: "#6F7693",
+  purple: "#53277E",
   outline: "rgba(240, 250, 250, 1)",
 };

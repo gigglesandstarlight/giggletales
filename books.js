@@ -1,6 +1,7 @@
 import { dragonBook } from "./Book01";
 import { alphabetBook } from "./AlphabetBook";
 import { catBook } from "./catBook";
+import { beanBook } from "./beanBook";
 
 export const books = [
   {
@@ -29,6 +30,15 @@ export const books = [
     priceType: "free",
     productId: null,
     book: catBook,
+  },
+  {
+    id: "bean-book",
+    title: "Jack and the Beanstalk",
+    subtitle: "A classic retelling from GiggleTales Library",
+    coverEmoji: "🌱",
+    priceType: "free",
+    productId: null,
+    book: beanBook,
   },
   {
     id: "princess-princess",

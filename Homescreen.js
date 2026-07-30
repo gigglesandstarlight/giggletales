@@ -1,4 +1,4 @@
-import { Text, View, Pressable } from "react-native";
+import { Text, View, Pressable, ScrollView } from "react-native";
 import { colors } from "./styles";
 import { books } from "./books";
 import LogoPatternBackground from "./LogoPatternBackground";
@@ -18,14 +18,27 @@ export default function HomeScreen({ openBook }) {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
+          paddingTop: 55,
           padding: 24,
         }}
       >
+      <View
+          style={{
+            marginHorizontal: 24,
+            backgroundColor: colors.card,
+            borderColor: colors.outline,
+            borderWidth: 2,
+            borderRadius: 24,
+            paddingVertical: 20,
+            paddingHorizontal: 18,
+            alignItems: "center",
+          }}
+        >
       <Text
         style={{
           fontSize: 36,
           fontWeight: "bold",
-          color: colors.text,
+          color: colors.purple,
           marginTop: 0,
         }}
       >
@@ -35,93 +48,120 @@ export default function HomeScreen({ openBook }) {
       <Text
         style={{
           fontSize: 18,
-          color: colors.mutedText,
+          color: colors.primary,
+          marginTop: 0,
+          textAlign: "center",
+        }}
+      >
+        Sweet stories for little listeners
+      </Text>
+
+      <Text
+        style={{
+          fontSize: 18,
+          color: colors.text,
           marginTop: 10,
           textAlign: "center",
         }}
       >
-        Sweet stories for little listeners{"\n"}Turn sound on to enable “Read to me.” 🔊
+        Turn sound on to enable “Read to me.” 🔊
       </Text>
+      </View>
 
-      <View style={{ marginTop: 32, width: "100%", gap: 16 }}>
-        {books.map((item, index) => (
-          <Pressable
-            key={item.id}
-            onPress={() => {
-              if (item.book) {
-                openBook(item.book);
-              }
-            }}
-            style={{
-              backgroundColor: colors.card,
-              borderColor: colors.outline,
-              borderWidth: 2,
-              borderRadius: 22,
-              padding: 18,
-              width: "100%",
-              flexDirection: "row",
-              alignItems: "center",
-              minHeight: 120,
-              
-            }}
-          >
-            <View
+       <ScrollView
+          style={{
+            flex: 1,
+            width: "100%",
+            marginTop: 24,
+          }}
+          contentContainerStyle={{
+            paddingHorizontal: 24,
+            paddingBottom: 50,
+            gap: 16,
+          }}
+          showsVerticalScrollIndicator={false}
+        >
+          {books.map((item, index) => (
+            <Pressable
+              key={item.id}
+              onPress={() => {
+                if (item.book) {
+                  openBook(item.book);
+                }
+              }}
               style={{
-               width: 72,
-               height: 88,
-               borderRadius: 14,
-               backgroundColor: coverColors[index % coverColors.length],
-               alignItems: "center",
-               justifyContent: "center",
-               marginRight: 16,
+                backgroundColor: colors.card,
+                borderColor: colors.outline,
+                borderWidth: 2,
+                borderRadius: 22,
+                padding: 18,
+                width: "100%",
+                flexDirection: "row",
+                alignItems: "center",
+                minHeight: 120,
               }}
             >
-              <Text style={{ fontSize: 38 }}>{item.coverEmoji}</Text>
-            </View>
-
-            <View style={{ flex: 1 }}>
-              <Text
+              <View
                 style={{
-                  fontSize: 20,
-                  color: colors.text,
-                  fontWeight: "bold",
-                  opacity: item.book ? 1 : 0.55,
+                  width: 72,
+                  height: 88,
+                  borderRadius: 14,
+                  backgroundColor:
+                    coverColors[index % coverColors.length],
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginRight: 16,
                 }}
               >
-                {item.title}
-              </Text>
+                <Text style={{ fontSize: 38 }}>
+                  {item.coverEmoji}
+                </Text>
+              </View>
 
-              <Text
-                style={{
-                  fontSize: 15,
-                  color: colors.mutedText,
-                  marginTop: 4,
-                  opacity: item.book ? 1 : 0.55,
-                }}
-              >
-                {item.subtitle}
-              </Text>
+              <View style={{ flex: 1 }}>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    color: colors.text,
+                    fontWeight: "bold",
+                    opacity: item.book ? 1 : 0.55,
+                  }}
+                >
+                  {item.title}
+                </Text>
 
-              <Text
-               style={{
-                fontSize: 14,
-                color: item.book ? colors.text : colors.primary,
-                marginTop: 6,
-                fontWeight: "bold",               
-                }}
-              >
-  {item.priceType === "free"
-  ? "Free"
-  : item.priceType === "paid"
-  ? "Paid"
-  : "Coming Soon"}
-  
-</Text>
-            </View>
-          </Pressable>
-        ))}
+                <Text
+                  style={{
+                    fontSize: 15,
+                    color: colors.mutedText,
+                    marginTop: 4,
+                    opacity: item.book ? 1 : 0.55,
+                  }}
+                >
+                  {item.subtitle}
+                </Text>
+
+                <Text
+                  style={{
+                    fontSize: 14,
+                    color: item.book
+                      ? colors.text
+                      : colors.primary,
+                    marginTop: 6,
+                    fontWeight: "bold",
+                  }}
+                >
+                  {item.priceType === "free"
+                    ? "Free"
+                    : item.priceType === "paid"
+                    ? "Paid"
+                    : "Coming Soon"}
+                </Text>
+              </View>
+            </Pressable>
+          ))}
+        </ScrollView>
       </View>
-    </View>
     </LogoPatternBackground>
   );
 }

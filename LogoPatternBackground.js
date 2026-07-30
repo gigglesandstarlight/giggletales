@@ -55,7 +55,7 @@ export default function LogoPatternBackground({ children }) {
     <View
       style={{
         flex: 1,
-        backgroundColor: colors.card,
+        backgroundColor: "#53277E",
         overflow: "hidden",
       }}
     >
